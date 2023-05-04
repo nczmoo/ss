@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title> </title>
+    <style>
+    </style>
+
+  </head>
+    <body>
+		<table style='width:100%' id='assets' class='window'>
+			
+			
+		</table>
+		
+		<table style='width:100%' id='nft' class='d-none window'>
+			<tr><th>Name</th><th>Creator</th><th>Owner</th><th>Bid</th><th>Ask</th><th>Resell %</th></tr>
+			<tr><td><input id='NFTName' type='text' style='width:140px;' maxlength='16'></td><td></td><td></td><td></td><td> -</td><td><input id='NFTResell' type='number' value='0' min='0' max='99' style='width:50px;' maxlength='2'></td></tr>
+			<!--<tr><td>poopy diaper</td><td>olnog</td><td>olnog2</td><td>10</td><td> -</td><td>5%</td></tr>-->
+		</table>
+		
+		
+		<table style='width:100%' id='crypto' class='d-none window'>
+			<tr><th>Name</th><th>Capitalization</th><th>Hash Rate</th><th>Owned</th><th>Mining 1/1</th></tr>
+			<tr><td>ELONS</td><td>100,000</td><td>0</td><td>100,000</td><td> <input type='number' min='0' max='1'></td></tr>
+		</table>
+		
+
+		
+		<table style='width:100%' id='elons' class=' window d-none'>
+			<tr><th>Name</th><th>Type</th><th>Quantity</th><th>Bid</th><th>Ask</th></tr>
+			<tr><td>Mining Rig</td><td>Tech</td><td>1</td><td></td><td>1,000</td></tr>
+		</table>
+		
+		<nav class="navbar fixed-bottom navbar-light bg-light">
+			<button class="btn btn-sm btn-outline-secondary menu active" type="button" id='menu-assets'>Assets</button>
+			<button class="btn btn-sm btn-outline-secondary menu" type="button" id='menu-crypto'>Crypto</button>
+			<button class="btn btn-sm btn-outline-secondary  menu"  type="button" id='menu-nft'>NFT</button>
+			<button class="btn btn-sm btn-outline-secondary menu"  type="button" id='menu-elons'>ELONS</button>
+
+		</nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.6.0.js'></script>
+    <script src='js/UI.js'></script>
+
+
+    <script src='js/Game.js'></script>
+    <script src='js/events.js'></script>
+
+    <script src='js/js.js'></script>
+
+  </body>
+</html>
